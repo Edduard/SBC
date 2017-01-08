@@ -1,0 +1,23 @@
+<ion-view title="Query XML">
+  <ion-content padding="true" class="has-header">
+    <button class="button button-block button-positive" ng-click="print()">
+        Read the XML file
+    </button>
+    <div ng-repeat="cat in cats">
+      <div class="card">
+        <div class="item item-divider">
+          <p>Name: {{cat.name}}</p>
+        </div>
+        <div class="item item-text-wrap">
+          <p>Gender: {{cat.gender}}</p>
+        </div>
+        <div class="item item-text-wrap">
+          <p>Color: {{cat.color}}</p>
+        </div>
+        <div class="item item-text-wrap">
+          <p>Age: {{cat.age}}</p>
+        </div>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

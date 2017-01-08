@@ -1,0 +1,45 @@
+<ion-view title="Edit XML">
+  <ion-content padding="true" class="has-header">
+    <div class="row">
+      <div class="col col-offset-75">
+        <button class="button button-icon icon ion-android-cancel"></button>
+      </div>
+      <div class="col">
+        <button class="button button-icon icon ion-android-done"></button>
+      </div>
+    </div>
+    <div ng-repeat="cat in cats">
+      <div class="card">
+        <div class="item item-divider">
+          <label class="item item-input">
+           <span class="input-label">Name:</span>
+           <input type="text" placeholder="{{cat.name}}" ng-model="cat.name" >
+          </label>
+        </div>
+        <div class="item item-text-wrap">
+          <label class="item item-input">
+           <span class="input-label">Gender:</span>
+           <input type="text" placeholder="{{cat.gender}}" ng-model="cat.gender" >
+          </label>
+        </div>
+        <div class="item item-text-wrap">
+          <label class="item item-input">
+           <span class="input-label">Color:</span>
+           <input type="text" placeholder="{{cat.color}}" ng-model="cat.color" >
+          </label>
+        </div>
+        <div class="item item-text-wrap">
+          <label class="item item-input">
+           <span class="input-label">Age:</span>
+           <input type="text" placeholder="{{cat.age}}" ng-model="cat.age" >
+          </label>
+        </div>
+        <!--
+        <div class="item item-text-wrap">
+          <ion-delete-button class="ion-minus-circled"></ion-delete-button>
+        </div>
+        -->
+      </div>
+    </div>
+  </ion-content>
+</ion-view>
