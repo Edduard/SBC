@@ -1,13 +1,5 @@
 <ion-view title="Edit XML">
   <ion-content padding="true" class="has-header">
-    <div class="row">
-      <div class="col col-offset-75">
-        <button class="button button-icon icon ion-android-cancel"></button>
-      </div>
-      <div class="col">
-        <button class="button button-icon icon ion-android-done"></button>
-      </div>
-    </div>
     <div ng-repeat="cat in cats">
       <div class="card">
         <div class="item item-divider">
@@ -42,4 +34,14 @@
       </div>
     </div>
   </ion-content>
+  <ion-footer-bar class="bar-light footerStyle">
+    <div class="row">
+      <div class="col col-50">
+        <button class="button button-icon icon ion-android-cancel centered"></button>
+      </div>
+      <div class="col col-50">
+        <button class="button button-icon icon ion-android-done centered"></button>
+      </div>
+    </div>
+  </ion-footer-bar>
 </ion-view>
