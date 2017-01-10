@@ -1,9 +1,9 @@
 <ion-view title="Query XML">
   <ion-content padding="true" class="has-header">
-    <button class="button button-block button-positive" ng-click="print()">
+    <button class="button button-block button-balanced" ng-click="load()">
         Read the XML file
     </button>
-    <div ng-repeat="cat in cats">
+    <div ng-repeat="cat in catsList.cats.cat track by $index">
       <div class="card">
         <div class="item item-divider">
           <p>Name: {{cat.name}}</p>

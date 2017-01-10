@@ -1,6 +1,9 @@
 <ion-view title="Edit XML">
   <ion-content padding="true" class="has-header">
-    <div ng-repeat="cat in cats">
+    <button class="button button-block button-positive" ng-click="reload()">
+        Reload data
+    </button>
+    <div ng-repeat="cat in tempCatsList.cats.cat track by $index">
       <div class="card">
         <div class="item item-divider">
           <label class="item item-input">
@@ -36,11 +39,11 @@
   </ion-content>
   <ion-footer-bar class="bar-light footerStyle">
     <div class="row">
-      <div class="col col-50">
-        <button class="button button-icon icon ion-android-cancel centered"></button>
+      <div class="col col-50" ng-click="reload()">
+        <button class="button button-icon icon ion-android-cancel cancelStyle"></button>
       </div>
-      <div class="col col-50">
-        <button class="button button-icon icon ion-android-done centered"></button>
+      <div class="col col-50" ng-click="save()">
+        <button class="button button-icon icon ion-android-done doneStyle"></button>
       </div>
     </div>
   </ion-footer-bar>

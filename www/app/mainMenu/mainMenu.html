@@ -1,10 +1,40 @@
 <ion-view title="Main Menu">
   <ion-content padding="true" class="has-header">
-    <button class="button button-block button-positive" ui-sref="queryXML">
-        Query XML
+    <button class="button button-block button-assertive" ng-click="init()">
+        Get original XML file
     </button>
-    <button class="button button-block button-assertive" ui-sref="editXML">
+    <button class="button button-block button-positive" ui-sref="editXML">
         Edit XML file
     </button>
+    <button class="button button-block button-positive" ng-click="reload()">
+        Reload data
+    </button>
+    <label class="item item-input item-select">
+        <div class="input-label">
+        Show
+        </div>
+        <select ng-model="mySelect" ng-change="loadSelectedCats(mySelect)">
+        <option value="" selected>All cats</option>
+        <option >Young cats</option>
+        <option >White cats</option>
+        <option >Male cats</option>
+        </select>
+    </label>
+    <div ng-repeat="cat in catsList.cats.cat track by $index">
+      <div class="card">
+        <div class="item item-divider">
+          <p>Name: <span class="nameIdentifier">{{cat.name}}</span> </p>
+        </div>
+        <div class="item item-text-wrap">
+          <p>Gender: {{cat.gender}}</p>
+        </div>
+        <div class="item item-text-wrap">
+          <p>Color: {{cat.color}}</p>
+        </div>
+        <div class="item item-text-wrap">
+          <p>Age: {{cat.age}}</p>
+        </div>
+      </div>
+    </div>
   </ion-content>
 </ion-view>

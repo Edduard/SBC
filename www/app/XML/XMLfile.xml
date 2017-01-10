@@ -3,7 +3,7 @@
         <name>George</name>
         <gender>male</gender>
         <color>white-mustard</color>
-        <age>5 years</age>
+        <age>5</age>
     </cat>
     <cat>
         <name>Pety</name>
@@ -15,12 +15,12 @@
         <name>Alex</name>
         <gender>male</gender>
         <color>white-grey-black</color>
-        <age>3</age>
+        <age>2</age>
     </cat>
     <cat>
         <name>Rex</name>
         <gender>male</gender>
-        <color>white-mustard</color>
-        <age>2</age>
+        <color>black</color>
+        <age>1</age>
     </cat>
 </cats>

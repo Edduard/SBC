@@ -12,7 +12,7 @@ angular.module('app.routes', [])
       .state('editXML', {
         url: '/editXML',
         templateUrl: 'app/editXML/editXML.html',
-        controller: 'editXMLController'
+        controller: 'mainMenuController'
       })
 
       //Use Cases    
@@ -20,7 +20,7 @@ angular.module('app.routes', [])
       .state('queryXML', {
         url: '/queryXML',
         templateUrl: 'app/queryXML/queryXML.html',
-        controller: 'queryXMLController'
+        controller: 'mainMenuController'
       })
 
     // if none of the above states are matched, use this as the fallback
